@@ -1,3 +1,4 @@
+
 (function () {
   "use strict";
 
@@ -13,7 +14,7 @@
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
       
       if( ! action ) {
-        displayError(thisForm, 'The form action property is not set!');
+        displayError(thisForm, 'The form action property is not set!')
         return;
       }
       thisForm.querySelector('.loading').classList.add('d-block');
@@ -32,7 +33,7 @@
                 php_email_form_submit(thisForm, action, formData);
               })
             } catch(error) {
-              displayError(thisForm, error);
+              displayError(thisForm, error)
             }
           });
         } else {
@@ -51,11 +52,7 @@
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
-      if( response.ok ) {
-        return response.text();
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-      }
+      return response.text();
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');

@@ -9,16 +9,15 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Icons -->
-   <link href="assets/img/logo.png" rel="icon">
-   <link href="assets/img/logo.png" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -29,44 +28,48 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <script>    
-  alert(" Site esta em beta, qualquer erro pode entrar em contato com o Alex e em alguns dias esse alerta vai estar sendo retirado ")
+    alert("ALERTA IMPORTANTE, site esta em beta e em alguns dias esses recados vai estar sendo removidos");
+    alert("Qualquer duvida ou erro do site pode estar falando direto comigo => Alex ou falar com o pastor Abel que estara passando meu whatsApp - responsalver por desenvolver o site ")
+  
+  </script>
 
-</script>
+  <!-- =======================================================
+  * Site Name: Ministério - v0.0.1
+  * Author: Alex Henrique
+  ======================================================== -->
 </head>
 
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-
-      <div class="contact-info d-flex align-items-center">
-        
-        <i class="bi bi-whatsapp d-flex align-items-center" ><span>+55 11 98047-7537</span></i>
-        <!-- <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i> -->
-      </div>
-
-      
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+      <i class="bi bi-whatsapp d-flex align-items-center"><span>55 11 98047-7537</span></i>
+      <!-- <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i> -->
     </div>
-  </div>
+  </section>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-cente">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">Ministério Êxodo</a></h1> -->
-      <a href="#hero" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <div class="logo me-auto">
+        <!-- <h1><a href="index.html">Ministério Êxodo</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-
+          
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre nós</a></li>
           <li><a class="nav-link scrollto" href="#specials">Cultos</a></li>
           <li><a class="nav-link scrollto" href="#events">Eventos</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Galeria</a></li>
           <li><a class="nav-link scrollto" href="#chefs">Lideres</a></li>
-         
+
+          <!-- Sub Links-->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -84,85 +87,144 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          
-          <li><a class="nav-link scrollto" href="#contact">Contatos</a></li>         
-        </ul>        
-        <i class="bi bi-list mobile-nav-toggle"></i>        
-      </nav>
-      <!-- .navbar -->
-      <!-- <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">####</a> -->
+          <!-- Fim sub links-->
+
+
+          <li><a class="nav-link scrollto" href="#contact">Contatos</a></li>       
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+     
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1>Ministério <span>Êxodo</span></h1>
-          <h2>Resgatando Valores</h2>
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-          <div class="btns">
-            <a href="https://wa.me/5511980477537" class="btn-menu animated fadeInUp scrollto">WhatsApp</a>
-            <a href="https://www.facebook.com/projetoexodooficial" class="btn-book animated fadeInUp scrollto">Facebook</a>
-            <a href="https://www.instagram.com/ministerioexodooficial/" class="btn-book animated fadeInUp scrollto" >Instagram</a>
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Ministério</span> Êxodo</h2>
+                <p class="animate__animated animate__fadeInUp">Resgatando Valores</p>
+                <div>
+                  <a href="https://wa.me/5511980477537" class="btn-menu animated fadeInUp scrollto">WhatsApp</a>
+                  <a href="https://www.facebook.com/projetoexodooficial" class="btn-book animated fadeInUp scrollto">Facebook</a>
+                  <a href="https://www.instagram.com/ministerioexodooficial/" class="btn-book animated fadeInUp scrollto" >Instagram</a>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Ministério</span> Êxodo</h2>
+                <p class="animate__animated animate__fadeInUp">Resgatando Valores</p>
+                <div>
+                  <a href="https://wa.me/5511980477537" class="btn-menu animated fadeInUp scrollto">WhatsApp</a>
+                  <a href="https://www.facebook.com/projetoexodooficial" class="btn-book animated fadeInUp scrollto">Facebook</a>
+                  <a href="https://www.instagram.com/ministerioexodooficial/" class="btn-book animated fadeInUp scrollto" >Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Ministério</span> Êxodo</h2>
+                <p class="animate__animated animate__fadeInUp">Resgatando Valores</p>
+                <div>
+                  <a href="https://wa.me/5511980477537" class="btn-menu animated fadeInUp scrollto">WhatsApp</a>
+                  <a href="https://www.facebook.com/projetoexodooficial" class="btn-book animated fadeInUp scrollto">Facebook</a>
+                  <a href="https://www.instagram.com/ministerioexodooficial/" class="btn-book animated fadeInUp scrollto" >Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="/assets/videos/01.mp4" class="glightbox play-btn"></a>
-        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
 
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+    <!-- ======= Quem Somos ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container-fluid">
 
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <div class="about-img">
-              <img src="assets/img/sobre-1.jpg" alt="">
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/sobre-1.jpg");'>
+            <a href="#" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3><strong>Quem nós somos</strong></h3>
+              <p>
+                O Ministério Êxodo foi fundada pelos Pastores Abel Igidio e sua esposa Fernanda Igidio.
+              </p>
+              <!-- <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p> -->
+              <ul>
+                <li><i class="bx bx-check-double"></i> Nossos valores são a base de tudo o que acreditamos que Deus nos chamou para fazer como igreja.</li>
+                <li><i class="bx bx-check-double"></i> Nossa missão é levar as pessoas a um relacionamento autêntico e transformador com Jesus Cristo.</li>
+                <li><i class="bx bx-check-double"></i> Inspiração . Através do poder do Espírito Santo, trazemos vida e elevação a todas as situações. Acreditamos verdadeiramente que em Jesus Cristo o melhor ainda está por vir!</li>
+              </ul>
+              <!-- <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum
+              </p> -->
             </div>
+
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Quem nós somos</h3>
-            <p class="fst-italic">
-              O Ministério Êxodo foi fundada pelos Pastores Abel Igidio e sua esposa Fernanda Igidio.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i>Nossos valores são a base de tudo o que acreditamos que Deus nos chamou para fazer como igreja.</li>
-              <li><i class="bi bi-check-circle"></i>Nossa missão é levar as pessoas a um relacionamento autêntico e transformador com Jesus Cristo.</li>
-              <li><i class="bi bi-check-circle"></i>Inspiração . Através do poder do Espírito Santo, trazemos vida e elevação a todas as situações. Acreditamos verdadeiramente que em Jesus Cristo o melhor ainda está por vir!</li>
-            </ul>
-            <!-- <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p> -->
-          </div>
+
         </div>
 
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Versiculos do dia ======= -->
+    
+    <!-- ======= Whu Us Section ======= -->
     <section id="why-us" class="why-us">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
-          <h2>Em breve links devocionais de estudos</h2>
-          <p>Ministério Êxodo</p>
+          <h2>Ministério <span>Êxodo</span></h2>
+          <p>EM BREVE LINKS DEVOCIONAIS DE ESTUDOS</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
               <span>João 20:21</span>
               <h4>Novamente Jesus disse: "Paz seja com vocês! Assim como o Pai me enviou, eu os envio".</h4>
               <!-- <p></p> -->
@@ -170,7 +232,7 @@
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
               <span>Marcos 16:15</span>
               <h4>E disse-lhes: "Vão pelo mundo todo e preguem o evangelho a todas as pessoas.</h4>
               <!-- <p></p> -->
@@ -178,33 +240,28 @@
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="box">
               <span>Salmos 96:3</span>
               <h4>Anunciem a sua glória entre as nações, seus feitos maravilhosos entre todos os povos!</h4>
-              <!-- <p></p> -->
             </div>
           </div>
 
         </div>
 
       </div>
-    </section>
-    
-    <!-- Fim sessão -->
+    </section><!-- End Whu Us Section -->
 
-   
     
 
-    <!-- ======= SESSAO 01 ======= -->
-     <section id="specials" class="specials">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container">
 
         <div class="section-title">
-          <h2>Cultos</h2>
-          <p>Êxodo</p>
+          <h2>Cultos <span>Èxodo</span></h2>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
@@ -217,9 +274,8 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Culto da família</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Culto de Ensino</a>
-              </li>
-              
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Culto de ensino</a>
+              </li>             
             </ul>
           </div>
           <div class="col-lg-9 mt-4 mt-lg-0">
@@ -229,11 +285,10 @@
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Todo 3º Domingo do mês</h3>
                     <p class="fst-italic">Na noite antes de sua morte, Jesus se reuniu com seus discípulos para jantar. Ele sabia que estava chegando a hora de sua crucificação e que não tinha muito mais tempo com seus amigos. Por isso, essa última ceia com eles era muito importante.</p>
-                    <p>Depois do jantar, Jesus pegou em um pedaço de pão e um copo de vinho e os distribuiu aos discípulos. Ele explicou que o pão representava seu corpo, que seria dado por eles. O vinho representava o sangue de Jesus, 
-                      que iria estabelecer uma nova aliança entre Deus e os homens, trazendo salvação.</p>
+                    <p>Depois do jantar, Jesus pegou em um pedaço de pão e um copo de vinho e os distribuiu aos discípulos. Ele explicou que o pão representava seu corpo, que seria dado por eles. O vinho representava o sangue de Jesus, que iria estabelecer uma nova aliança entre Deus e os homens, trazendo salvação.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/cultos/ceia-2.jpg" alt="" class="img-fluid">
+                    <img src="assets/img/cultos/ceia-1.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -242,9 +297,7 @@
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Todo 1º Domingo do mês</h3>
                     <p class="fst-italic">Então, Jesus aproximou-se deles e disse: Foi-me dada toda a autoridade nos céus e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai e do Filho e do Espírito Santo, ensinando-os a obedecer a tudo o que eu ordenei a vocês. E eu estarei sempre com vocês, até o fim dos tempos. Mateus 28:18-20</p>
-                    <p>O espírito do Senhor DEUS está sobre mim; porque o SENHOR me ungiu, para pregar boas novas aos mansos; enviou-me a restaurar os contritos de coração, 
-                      a proclamar liberdade aos cativos, e a abertura de prisão aos presos. Isaías 61:1
-                    </p>
+                    <p>O espírito do Senhor DEUS está sobre mim; porque o SENHOR me ungiu, para pregar boas novas aos mansos; enviou-me a restaurar os contritos de coração, a proclamar liberdade aos cativos, e a abertura de prisão aos presos. Isaías 61:1</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/cultos/missoes-1.jpg" alt="" class="img-fluid">
@@ -255,10 +308,8 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Todo 2º e 4º Domingo do mês</h3>
-                    <p class="fst-italic">A Bíblia dá os melhores parâmetros para os nossos relacionamentos familiares. Por isso, se queremos que as nossas famílias sejam abraçados pelo amor e graça do Senhor, precisamos que a Palavra de Deus esteja no centro.
-                      Os relacionamentos familiares são importantes para Deus. Esses versículos bíblicos comentados lhe ajudarão a se concentrar no valor da família unida, no amor e na fé em Jesus Cristo:</p>
-                    <p>Apesar de todos os conflitos que existem no mundo, o nosso Deus deseja que a paz reine em nossos corações e em nossa casa. Esse é um bom princípio: ficar longe do mal, fazer o bem e buscar a paz! Jesus Cristo é o Príncipe da Paz. Vamos buscá-lo em família! Vamos deixar que Ele esteja no centro do nosso lar, 
-                      reinando e nos ajudando a resolver todos os problemas. Que a Paz de Deus reine na família!</p>
+                    <p class="fst-italic">A Bíblia dá os melhores parâmetros para os nossos relacionamentos familiares. Por isso, se queremos que as nossas famílias sejam abraçados pelo amor e graça do Senhor, precisamos que a Palavra de Deus esteja no centro. Os relacionamentos familiares são importantes para Deus. Esses versículos bíblicos comentados lhe ajudarão a se concentrar no valor da família unida, no amor e na fé em Jesus Cristo:</p>
+                    <p>Apesar de todos os conflitos que existem no mundo, o nosso Deus deseja que a paz reine em nossos corações e em nossa casa. Esse é um bom princípio: ficar longe do mal, fazer o bem e buscar a paz! Jesus Cristo é o Príncipe da Paz. Vamos buscá-lo em família! Vamos deixar que Ele esteja no centro do nosso lar, reinando e nos ajudando a resolver todos os problemas. Que a Paz de Deus reine na família!</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/cultos/familia-3.jpg" alt="" class="img-fluid">
@@ -269,37 +320,31 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Todas as Quarta-feiras</h3>
-                    <p class="fst-italic">A Palavra de Deus é fonte de vida e sabedoria. Por isso é tão importante a igreja de Cristo estar alicerçada no conhecimento das Sagradas Escrituras. A diversidade de temas bíblicos é abrangente, por isso, certamente, nos ajudarão a esclarecer e amadurecer em nossa caminhada cristã.</p>
-                    <p></p>
+                    <!-- <p class="fst-italic"></p> -->
+                    <p>A Palavra de Deus é fonte de vida e sabedoria. Por isso é tão importante a igreja de Cristo estar alicerçada no conhecimento das Sagradas Escrituras. A diversidade de temas bíblicos é abrangente, por isso, certamente, nos ajudarão a esclarecer e amadurecer em nossa caminhada cristã.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/cultos/ensino-1.jpg" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
+             
             </div>
           </div>
         </div>
 
       </div>
-    </section> 
-    <!-- FIM SESSAO 01 -->
+    </section><!-- End Specials Section -->
 
-
-
-
-
-    <!-- ======= EVENTOS ======= -->
-
+    <!-- ======= Eventos ======= -->
     <section id="events" class="events">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
-          <h2>Ministério Êxodo</h2>
-          <p>Próximos eventos</p>
+          <h2>Próximos <span>evenetos</span> do Ministério Êxodo</h2>
         </div>
 
-        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="events-slider swiper">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -310,23 +355,23 @@
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Ministério Êxodo</h3>
                   <div class="price">
-                    <p><span>Ministério Êxodo</span></p>
+                    <p><span>Fique atento</span></p>
                   </div>
-                  <!-- <p class="fst-italic">
-                    Ministério Êxodo
-                  </p> -->
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Fique atento</li>
-                    <li><i class="bi bi-check-circled"></i> Os proximos eventos apareceram aqui</li>
-                    <!-- <li><i class="bi bi-check-circled"></i> Ministério Êxodo</li> -->
-                  </ul>
+                  <p class="fst-italic">
+                    Próximos eventos apareceram aqui
+                  </p>
+                  <!-- <ul>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul> -->
                   <!-- <p>
-                    Ministério Êxodo
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
                   </p> -->
                 </div>
               </div>
-            </div>
-            <!-- Fim evento 1 -->
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="row event-item">
@@ -336,22 +381,23 @@
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Ministério Êxodo</h3>
                   <div class="price">
-                    <p><span>Ministério Êxodo</span></p>
+                    <p><span>Fique atendo</span></p>
                   </div>
-                  <!-- <p class="fst-italic">
-                    Ministério Êxodo
-                  </p> -->
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Fique atento</li>
-                    <li><i class="bi bi-check-circled"></i> Os proximos eventos apareceram aqui</li>
-                    <!-- <li><i class="bi bi-check-circled"></i> Ministério Êxodo</li> -->
+                  <p class="fst-italic">
+                    Próximos eventos apareceram aqui
+                  </p>
+                  <!-- <ul>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                   </ul>
-                  <!-- <p>
-                    Ministério Êxodo
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
                   </p> -->
                 </div>
               </div>
-            </div> <!-- Fim envento 2-->
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="row event-item">
@@ -361,24 +407,23 @@
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Ministério Êxodo</h3>
                   <div class="price">
-                    <p><span>Ministério Êxodo</span></p>
+                    <p><span>Fique atento</span></p>
                   </div>
-                  <!-- <p class="fst-italic">
-                    Ministério Êxodo
-                  </p> -->
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Fique atento</li>
-                    <li><i class="bi bi-check-circled"></i> Os proximos eventos apareceram aqui</li>
-                    <!-- <li><i class="bi bi-check-circled"></i> Ministério Êxodo</li> -->
+                  <p class="fst-italic">
+                    Próximos eventos apareceram aqui
+                  </p>
+                  <!-- <ul>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                   </ul>
-                  <!-- <p>
-                    Ministério Êxodo
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
                   </p> -->
                 </div>
               </div>
-            </div> 
-            <!-- Fim evento 3-->
-           
+            </div><!-- End testimonial item -->
 
           </div>
           <div class="swiper-pagination"></div>
@@ -386,124 +431,27 @@
 
       </div>
     </section><!-- End Events Section -->
-  
 
-    <!-- ======= Testimonials Section ======= -->
-
-    <!-- <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>What they're saying about us</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div>
-            
-            
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div>
-            
-           
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div>
-            
-           
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div>
-            
-            
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div>
-            
-            
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section> -->
     
-    <!-- End Testimonials Section -->
 
-
-
-    <!-- ======= Galeria ======= -->
+    <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
-
-      <div class="container" data-aos="fade-up">
+      <div class="container-fluid">
+        
         <div class="section-title">
-          <h2>Galeria de fotos</h2>
-          <p>Êxodo</p>
+          <h2>Galeria <span>de Fotos</span></h2>
+          <p>Um pouco dos nossos cultos</p>
+          <p>Todas as fotos estaram sendo postada no instagram</p>
+          
+          <a href="https://www.instagram.com/ministerioexodooficial/" class="btn-book animated fadeInUp scrollto" >Instagram</a>
+          
         </div>
-      </div>
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-0">
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/galeria/01.jpg" class="gallery-lightbox" data-gall="gallery-item">
+              <a href="assets/img/galeria/01.jpg" class="gallery-lightbox">
                 <img src="assets/img/galeria/01.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -511,7 +459,7 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/galeria/02.jpg" class="gallery-lightbox" data-gall="gallery-item">
+              <a href="assets/img/galeria/02.jpg" class="gallery-lightbox">
                 <img src="assets/img/galeria/02.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -519,7 +467,7 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/galeria/03.jpg" class="gallery-lightbox" data-gall="gallery-item">
+              <a href="assets/img/galeria/03.jpg" class="gallery-lightbox">
                 <img src="assets/img/galeria/03.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -527,7 +475,7 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/galeria/04.jpg" class="gallery-lightbox" data-gall="gallery-item">
+              <a href="assets/img/galeria/04.jpg" class="gallery-lightbox">
                 <img src="assets/img/galeria/04.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -535,7 +483,7 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/galeria/05.jpg" class="gallery-lightbox" data-gall="gallery-item">
+              <a href="assets/img/galeria/05.jpg" class="gallery-lightbox">
                 <img src="assets/img/galeria/05.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -543,7 +491,7 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/galeria/06.jpg" class="gallery-lightbox" data-gall="gallery-item">
+              <a href="assets/img/galeria/06.jpg" class="gallery-lightbox">
                 <img src="assets/img/galeria/06.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -551,7 +499,7 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/galeria/07.jpg" class="gallery-lightbox" data-gall="gallery-item">
+              <a href="assets/img/galeria/07.jpg" class="gallery-lightbox">
                 <img src="assets/img/galeria/07.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -559,7 +507,7 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/galeria/08.jpg" class="gallery-lightbox" data-gall="gallery-item">
+              <a href="assets/img/galeria/08.jpg" class="gallery-lightbox">
                 <img src="assets/img/galeria/08.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -568,48 +516,40 @@
         </div>
 
       </div>
-    </section>
-    
-    <!-- Fim galeria -->
+    </section><!-- End Gallery Section -->
 
-    <!-- ======= Liderança ======= -->
+    <!-- ======= Chefs Section ======= -->
     <section id="chefs" class="chefs">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
-          <h2>Lideres</h2>
-          <p>Ministério Êxodo</p>
+          <h2>Lideres <span>Êxodo</span></h2>
+          <p>Resgatando Valores</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/lideres/pastor.jpg" class="img-fluid" alt="">
+            <div class="member">
+              <div class="pic"><img src="assets/img/lideres/pastor.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Pastor Presidente</h4>
-                  <span>Abel Igidio</span>
-                </div>
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a> -->
-                  <a href="https://www.facebook.com/abelmarcos.igidio"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/abelmrcos/"><i class="bi bi-instagram"></i></a>
+                <h4>Pastor Presidente</h4>
+                <span>Abel Igidio</span>
+                <div class="social">                 
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-whatsapp"></i></a>
-                  <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
           <!-- <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+            <div class="member">
+              <div class="pic"><img src="assets/img/lideres/pastor.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Patissier</span>
-                </div>
+                <h4>Sarah Jhonson</h4>
+                <span>Patissier</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -621,18 +561,16 @@
           </div> -->
 
           <!-- <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+            <div class="member">
+              <div class="pic"><img src="assets/img/ideres/pastor.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>Cook</span>
-                </div>
+                <h4>William Anderson</h4>
+                <span>Cook</span>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -641,175 +579,212 @@
         </div>
 
       </div>
-    </section>
-    <!-- Fim lideres -->
+    </section><!-- End Chefs Section -->
 
-    <!-- ======= Contato ======= -->
-
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="testimonials">
      
+     <div class="container position-relative">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper"> -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>  -->
+            
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            
+            <!-- End testimonial item -->
+<!-- 
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            
+            <!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div> -->
+            
+            <!-- End testimonial item -->
+
+          <!-- </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+    
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
-          <h2>Contato</h2>
-          <p>Êxodo</p>
+          <h2><span>Contato</span> Êxodo</h2>
+          <!-- <p></p> -->
         </div>
       </div>
 
-      <div data-aos="fade-up">
+      <div class="map">
         <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8168642108158!2d-46.21591052390314!3d-23.53908837881511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce77deadf59411%3A0x95371b404816ec7a!2sR.%20Jos%C3%A9%20de%20Carlo%2C%20599%20-%20Vila%20Lavinia%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008737-050!5e0!3m2!1spt-BR!2sbr!4v1696304192997!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen></iframe>
       </div>
-       
-      <div class="container" data-aos="fade-up">
-        <h2>O envio de email está temporariamente desativado, obrigado pela compreensão</h2>
-        <div class="row mt-5">
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Localização:</h4>
-                <p>Rua: José d'Carlo, 599 - Vila lavinia</p>
-                <p>Mogi das Cruzes - SP</p>
-              </div>
-
-              <!-- <div class="open-hours">
-                <i class="bi bi-clock"></i>
-                <h4>Open Hours:</h4>
-                <p>
-                  Monday-Saturday:<br>
-                  11:00 AM - 2300 PM
-                </p>
-              </div> -->
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>contato@ministerioexodo.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-whatsapp"></i>
-                <h4>WhatsApp:</h4>
-                <p>+55 11 98047-7537</p>
-              </div>
-
+      <div class="container mt-5">
+        <h1 style="color: #ffff;">O envio de email está temporariamente desativado, obrigado pela compreensão</h1>
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Localização:</h4>
+              <p>Rua: José d'Carlo, 599 - Vila lavinia<br>Mogi das Cruzes - SP</p>
             </div>
 
-          </div>
-          
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Mensagem" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
-            </form>
+            <!-- <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
+            </div> -->
 
-          </div>
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>exodo@example.com<br>contact@exodo.com</p>
+            </div>
 
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-whatsapp"></i>
+              <h4>WhatsApp</h4>
+              <p>+55 11 98047-7537</p>
+            </div>
+          </div>
         </div>
+        
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Seu email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
+        </form>
 
       </div>
-    </section>
-    <!-- End Contact Section -->
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <!-- <div class="footer-top"> -->
-      <!-- <div class="container"> -->
-        <!-- <div class="row"> -->
-
-          <!-- <div class="col-lg-3 col-md-6"> -->
-            <!-- <div class="footer-info"> -->
-              <!-- <h3>Ministério Êxodo</h3> -->
-              <!-- <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p> -->
-              <!-- <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div> -->
-
-          <!-- <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div> -->
-
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </div> -->
-
     <div class="container">
+      <h3>Ministério Êxodo</h3>
+      <p>Resgatando Valores</p>
+      <div class="social-links">
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+      </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Êxodo</span></strong>. Todos os direitos reservados
       </div>
       <div class="credits">
         
-        Designed by <a href="https://github.com/AllexHenrique/AllexHenrique">Alex Henrique</a>
+        Designed by <a href="#">Alex Henrique</a>
       </div>
     </div>
   </footer>
+  
   <!-- End Footer -->
 
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
